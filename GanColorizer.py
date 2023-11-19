@@ -185,6 +185,7 @@ class ColorizerModel(nn.Module):
         state_dict_part2 = torch.load('weights_part2.pt')
         self.load_state_dict(state_dict_part1, strict=False)
         self.load_state_dict(state_dict_part2, strict=False)
+        self.eval()
 
 
 
